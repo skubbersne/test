@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title> Javascript </title>			
+			<meta name="viewport" content="width=device-width, initial-scale=1"> 					
+			<script type="text/javascript" src="Exercise.js"></script>	
+				<script type="text/javascript" src="cordova.js"></script>     
+	</head>	
+	
+	<body>
+		<!-- Content: div-tag with id = "content" -->
+		<div id = "content">
+			
+			<h1>Box</h1>
+			<br>
+			
+			<div id="newContent"> </div>
+			<button id = "button1" onclick ="insertText()"> Test </button>	
+			
+			<br>
+			<div id= "input">
+				Calculate the volume of a box<br>			
+				 <input type="number" id="widthBox"  /> <br><br>
+				 <input type="number" id="lenghtBox"  /> <br><br>
+				 <input type="number" id="heightBox"  /><br><br>
+				 <button onclick= "calculate()"> Calculate </button>
+				 <div id = "result"></div>			 
+			 </div>
+			 <br>
+			 <div id= "input2">
+				Write a multiplication table <br>
+				 <input type="number" id="factor"  /> <br><br>
+				 <button onclick= "multiplication()"> Calculate </button>
+				 <div id = "mult-tb"></div>
+				 <button id = "button2" onclick ="retur()"> retur </button>
+			 <br> <a href = "index.html"> Retur </a>
+			 
+			 <br><br> 
+			 <br> <br>Ekstra: link til ekstern webside <br>
+			 <br>
+			<button id = "Wiki" onclick = "openBrowser('https://en.wikipedia.org/wiki/Bluetooth')">Wiki about Bluetooth</button>
+			 
+		</div> <!-- div id = "content" ends here -->
+	</body>
+</html>

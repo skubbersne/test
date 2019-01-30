@@ -1,0 +1,41 @@
+/* Two example, where formatting are
+  * added directly on a html-tag
+  */
+body{
+	background-color: green;
+	/*background-image:url("bluetooth.jpg");
+	background-repeat: no-repeat;*/
+
+}	
+img{
+	width: 100%;	
+}
+
+/* The content div soround
+  * every thing in the body
+  * The css make content  smaller than the body itself
+  * and centret.
+  */
+#content {
+	width: 80%;
+	margin: auto;
+}
+
+#text{
+	background-color: blue;
+}	
+#list{
+	background-color: red;
+}
+
+/* width will be 100% of content */
+#button1{
+	width: 100%;
+}
+	
+	
+	
+	
+
+
+
