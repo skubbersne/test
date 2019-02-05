@@ -82,10 +82,7 @@ function onConnect(){
 	document.getElementById("statusDiv").innerHTML = " Status: Connected";
 	document.getElementById("bleId").innerHTML = ConnDeviceId;
 	ble.startNotification(ConnDeviceId, blue.serviceUUID, blue.rxCharacteristic, onData, onError);
-	ble.console.log(device_id);
-	ble.console.log(deviceId);
-	ble.console.log(device);
-	ble.read(device_id);
+	
 }
 
 //failure
