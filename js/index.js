@@ -1,6 +1,10 @@
 // Based on an example:
 //https://github.com/don/cordova-plugin-ble-central
 
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(device.cordova);
+} 
 
 // ASCII only
 function bytesToString(buffer) {
@@ -70,10 +74,9 @@ function conn(){
 	document.getElementById("debugDiv").innerHTML =""; // empty debugDiv
 	var deviceTouchArr = deviceTouch.split(",");
 	ConnDeviceId = deviceTouchArr[1];
-	//document.getElementById("debugDiv").innerHTML += "<br>"+deviceTouchArr[0]+"<br>"+deviceTouchArr[1]; //for debug:
+	document.getElementById("debugDiv").innerHTML += "<br>"+deviceTouchArr[0]+"<br>"+deviceTouchArr[1]; //for debug:
 	ble.connect(ConnDeviceId, onConnect, onConnError);
  }
- 
  //succes
 function onConnect(){
 	document.getElementById("statusDiv").innerHTML = " Status: Connected";
